@@ -8,7 +8,7 @@ import { NewsComponent } from '@pages/news/news.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about-us', component: AboutUsComponent },
+  { path: 'about_us', component: AboutUsComponent },
   { path: 'documentation', component: DocumentationComponent },
   { path: 'login', component: LoginComponent },
   { path: 'news', component: NewsComponent },
