@@ -13,6 +13,7 @@ import { AboutUsComponent } from '@pages/about-us/about-us.component';
 import { DocumentationComponent } from '@pages/documentation/documentation.component';
 import { NewsComponent } from '@pages/news/news.component';
 import { LoginComponent } from '@pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const pages = [
   AboutUsComponent,
@@ -30,7 +31,7 @@ const components = [
 ];
 
 @NgModule({
-  declarations: [...pages, ...components],
+  declarations: [...pages, ...components, HomeComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

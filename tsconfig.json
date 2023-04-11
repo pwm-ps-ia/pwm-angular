@@ -4,7 +4,8 @@
   "compilerOptions": {
     "paths": {
       "@pages/*": ["src/app/pages/*"],
-      "@components/*": ["src/app/components/*"]
+      "@components/*": ["src/app/components/*"],
+      "@theme/*": ["src/app/assets/theme/*"]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
