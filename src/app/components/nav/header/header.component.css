@@ -1,0 +1,49 @@
+.header__buttons__login {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: #f54e4e;
+    color: white;
+    margin: 0px;
+    border: 2px #f54e4e solid;
+    font-weight: 600; }
+  
+.header__buttons__register {
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px #f54e4e solid;
+    color: #f54e4e;
+    font-weight: 500; }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid #f5f5f5;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 200; }
+    .header__logo {
+      width: 180px; }
+    .header__navigation {
+      list-style-type: none;
+      display: flex;
+      gap: 30px; }
+      .header__navigation__element a {
+        color: #4f4f4f;
+        text-decoration: none; }
+      .header__navigation__element--active a {
+        color: #f54e4e;
+        font-weight: 600; }
+    .header__buttons {
+      gap: 10px;
+      display: flex; }
+
+* {
+        font-family: "Poppins", sans-serif;
+}
