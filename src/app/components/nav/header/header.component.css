@@ -37,13 +37,14 @@
       .header__navigation__element a {
         color: #4f4f4f;
         text-decoration: none; }
-      .header__navigation__element--active a {
+    .header__navigation__element a:focus{
+        font-weight: 600;
         color: #f54e4e;
-        font-weight: 600; }
+    }
     .header__buttons {
       gap: 10px;
       display: flex; }
 
 * {
-        font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
