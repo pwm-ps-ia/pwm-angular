@@ -1,5 +1,5 @@
-@import "../../scss/theme/colors.scss";
-@import "../../scss/theme/components.scss";
+@import "../theme/colors.scss";
+@import "../theme/components.scss";
 
 .footer {
   width: 100%;
@@ -10,7 +10,12 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
   }
+
   &__social-media {
     &__list {
       color: $text-primary;

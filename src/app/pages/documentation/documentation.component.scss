@@ -1,60 +1,128 @@
-@import "../theme/colors.scss";
+@import "../components/footer.scss", "../components/header.scss";
+@import "../theme/index.scss";
 
 .sidebar {
-    &__left {
-        width: 298px;
-        background-color: $background-primary;
-        border-right: 2px solid $background-secondary;
+  &__left {
+    width: 298px;
+    background-color: $background-primary;
+    border-right: 2px solid $background-secondary;
+    position: fixed;
+    min-height: 100vh;
 
-        &__container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: relative;
-        padding: 90px 20px;
-
-            &__element {
-                cursor: pointer;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-weight: 500;
-                background-color: $background-secondary;
-                padding: 10px 15px;
-
-                    i {
-                    color: $text-secondary;
-                    }
-
-                    &--active {
-                    background-color: $brand;
-                    i {
-                        color: white;
-                    }
-                    p {
-                        color: white;
-                    }
-                }
-            }
-        }
+    @media (max-width: $md) {
+      display: none !important;
     }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      padding: 90px 20px;
+
+      &__element {
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        background-color: $background-secondary;
+        padding: 10px 15px;
+
+        i {
+          color: $text-secondary;
+        }
+
+        &--active {
+          background-color: $brand;
+          i {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  &__arrow {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 45px;
+    height: 45px;
+    background-color: $brand;
+    color: $background-primary;
+    border-radius: 0 30% 30% 0;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      padding: 30%;
+    }
+
+    @media (max-width: $md) {
+      display: flex !important;
+    }
+  }
 }
 
-
 .documentation {
-    padding-top: 90px;
-    padding-left: 30px;
-    max-width: 900px;
+  padding-top: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 900px;
+  margin-left: 300px;
+  margin-right: 280px;
+
+  @media (max-width: $md) {
+    margin-left: 0px;
+    h1 {
+      padding-left: 10px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    margin-right: 0;
+  }
+}
+
+#bubble {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 25px;
+  gap: 10px;
+  top: 110px;
+  left: calc(100% - 280px);
+  border-radius: 20px;
+  background-color: $background-primary;
+  color: $text-primary;
+
+  i {
+    text-decoration: none;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  @media (max-width: $sm) {
+    position: relative;
+    left: auto;
+    margin: 0% 10%;
+    top: 100px;
+    z-index: -1;
+  }
 }
 
 #body__documentation {
-    min-height: 100vh; 
-    display: grid; 
-    grid-template-rows: auto 1fr auto;
-}
-
-#main__documentation {
-    display: grid; 
-    grid-template-columns: auto 1fr auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
