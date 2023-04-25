@@ -31,24 +31,28 @@
     list-style-type: none;
     display: flex;
     gap: 30px;
+
     &__element {
       a {
         color: $text-secondary;
         text-decoration: none;
       }
-      
+
     }
 
     @media (max-width: $md) {
       display: none !important;
     }
   }
+
   &__buttons {
     gap: 10px;
     display: flex;
+
     &__login {
       @extend .button--primary;
     }
+
     &__register {
       @extend .button--secondary;
     }
@@ -60,6 +64,7 @@
 
   &__hamburguer {
     display: none;
+
     @media (max-width: $md) {
       display: block !important;
     }
