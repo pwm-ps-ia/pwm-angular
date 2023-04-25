@@ -9,7 +9,7 @@ interface TeamMember{
 @Component({
   selector: 'app-team-card',
   templateUrl: './team-card.component.html',
-  styleUrls: ['./team-card.component.css']
+  styleUrls: ['./team-card.component.scss']
 })
 export class TeamCardComponent {
     @Input() Member!: TeamMember;
