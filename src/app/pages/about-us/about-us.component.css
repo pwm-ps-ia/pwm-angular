@@ -121,30 +121,18 @@ body {
   justify-content: center; }
 
 .team__list {
-  display: flex;
   gap: 20px; }
-  .team__list__card {
-    flex: 1;
+
+.team__list__card {
     border-radius: 20px;
     overflow: hidden;
     background-color: white; }
-    .team__list__card__image {
-      width: 100%;
-      height: 300px;
-      overflow: hidden; }
-      .team__list__card__image__element {
-        transform: scale(1.3);
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        background-image: url("/static/images/pepe.jpg");
-        background-repeat: no-repeat; }
-    .team__list__card__body {
-      padding: 30px; }
-      .team__list__card__body__container {
-        padding: 50px; }
-
+@media (max-width: 800px) {
+  .team__list {
+        flex-direction: column;
+        align-items: center;
+  }
+}
 h1,
 h2,
 h3 {

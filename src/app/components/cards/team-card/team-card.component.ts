@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+interface TeamMember{
+  name : string,
+  description: string,
+  avatar : string
+};
 
 @Component({
   selector: 'app-team-card',
@@ -6,5 +12,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./team-card.component.css']
 })
 export class TeamCardComponent {
+    @Input() Member!: TeamMember;
+    @Input() Index!: number;
 
 }
